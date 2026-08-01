@@ -1,26 +1,31 @@
 {
-  "name": "personal-workbench",
-  "private": true,
-  "version": "0.1.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "test": "vitest run",
-    "test:watch": "vitest"
-  },
-  "dependencies": {
-    "@vitejs/plugin-react": "latest",
-    "dexie": "latest",
-    "react": "latest",
-    "react-dom": "latest"
-  },
-  "devDependencies": {
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
-    "jsdom": "latest",
-    "typescript": "latest",
-    "vite": "latest",
-    "vitest": "latest"
-  }
+    "name":  "personal-workbench",
+    "private":  true,
+    "version":  "0.1.0",
+    "type":  "module",
+    "scripts":  {
+                    "dev":  "vite",
+                    "build":  "tsc -b \u0026\u0026 vite build",
+                    "test":  "vitest run",
+                    "test:watch":  "vitest",
+                    "android:sync":  "npm run build \u0026\u0026 npx cap sync android",
+                    "android:open":  "npx cap open android"
+                },
+    "dependencies":  {
+                         "@capacitor/android":  "^8.5.0",
+                         "@capacitor/cli":  "^8.5.0",
+                         "@capacitor/core":  "^8.5.0",
+                         "@vitejs/plugin-react":  "latest",
+                         "dexie":  "latest",
+                         "react":  "latest",
+                         "react-dom":  "latest"
+                     },
+    "devDependencies":  {
+                            "@types/react":  "latest",
+                            "@types/react-dom":  "latest",
+                            "jsdom":  "latest",
+                            "typescript":  "latest",
+                            "vite":  "latest",
+                            "vitest":  "latest"
+                        }
 }
