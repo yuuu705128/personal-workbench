@@ -30,7 +30,9 @@ android {
                 keyPassword keystoreProperties['keyPassword']
             }
         }
-    }    buildTypes {
+    }
+
+    buildTypes {
         release {
             if (keystorePropertiesFile.exists()) {
                 signingConfig signingConfigs.release
